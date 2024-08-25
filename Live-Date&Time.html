@@ -5,18 +5,18 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-    <div class="w-full h-screen bg-emerald-400">
-        <div class="p-20">
-            <h1 class="text-white text-4xl">JavaScript Live Date & Time </h1>
-            <p class="text-2xl pt-10 text-purple-600 ">
-                The SetFullYear() Method sets the year of a date object:
-            </p>
-            <p id="data"></p>
+<body class="w-full h-screen bg-teal-400">
 
-        </div>
+    <h2 class="text-white text-4xl pl-20 pt-20 ">JavaScript setFullYear()</h2>
+    <p class="text-2xl pt-5 text-lime-800 pl-20">The setFullYear() method sets the year of a date object:</p>
 
-    </div>
+    <p id="demo" class="text-2xl pt-5 text-slate-950 pl-20"></p>
+
+    <script>
+        const d = new Date();
+        d.setFullYear(2024);
+        document.getElementById("demo").innerHTML = d;
+    </script>
 
 </body>
 
