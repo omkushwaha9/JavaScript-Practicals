@@ -9,17 +9,24 @@
     <h1 class="pl-20 pt-20 text-4xl text-white ">
         JavaScript Current Day
     </h1>
-    <h2 class="pl-20 pt-10 text-4xl text-white ">
+    <h2 class="pl-20 pt-10 text-3xl text-white ">
         The Current day Data Will get by the getDay() Method.
     </h2>
-    <p class="pl-20 pt-5 text-4xl text-white ">
+    <p class="pl-20 pt-5 text-2xl text-white ">
         Return the weekday as a number.
     </p>
-    <p class="pl-20 pt-5 text-4xl text-white ">
+    <p class="pl-20 pt-5 text-2xl text-white ">
         You can use an array of names to return the weekday as a name:
-        <p id="demo"></p>
     </p>
-
+    <p id="demo"
+    class="pl-20 pt-5 text-4xl text-slate-950"
+    ></p>
+<script>
+    const days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+    const d = new Date();
+    let day = days[d.getDay()];
+    document.getElementById("demo").innerHTML = day;
+</script>
 </body>
 
 </html>
