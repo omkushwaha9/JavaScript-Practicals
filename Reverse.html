@@ -15,7 +15,15 @@
     <p id="demo1"></p>
     <p id="demo2"></p>
 
-   
+    <script>
+      const Alphabets = ["Q","Z","L","P","X","M","K","W","E","V","C","B","N","D","S","A","F","J","H","G","R","T","Y","U","I","O"];
+      document.getElementById("demo1").innerHTML = Alphabets;
+
+      Alphabets.sort();
+      Alphabets.reverse();
+
+      document.getElementById("demo2").innerHTML = Alphabets;
+    </script>  
 </body>
 
 </html>
