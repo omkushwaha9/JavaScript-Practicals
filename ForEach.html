@@ -10,7 +10,8 @@
         <p id="demo"></p>
         <script>
             const numbers = [45, 4, 9, 16, 25];
-            
+            numbers.reverse();
+            document.getElementById("demo").innerHTML = numbers;
             let txt = "";
             numbers.forEach(myFunction);
             document.getElementById("demo").innerHTML = txt;
